@@ -1,0 +1,33 @@
+1. Bảng danh mục
+    Tên danh mục
+    Mô tả danh mục 
+    Đường dẫn tới danh mục
+2. Bảng dịch vụ
+    Tên dịch vụ
+    Thuộc danh mục 
+    Đường dẫn dịch vụ
+    Hình ảnh biểu trưng cho danh mục
+3. Bảng Users
+    Tên đăng nhập
+    Mật khẩu
+    Avatar(0 cần)
+4. Bảng role
+    Tên quyền
+    Mô tả quyền
+5. Nhà cung cấp(Đối tác) 
+    Tên nhà cung cấp
+    
+6. Bài viết
+
+
+Danh mục
+    Dịch vụ
+        Liệt kê danh sách dịch vụ
+        Thông tin chi tiết mỗi dịch vụ
+        Bài viết về các dịch vụ
+    Nhà cung cấp
+        Thông tin cơ bản
+        Bài viết
+    Tin tức
+        Tổng hợp
+    

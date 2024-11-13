@@ -1,0 +1,22 @@
+{
+    "navs":[
+        {
+            "id": 1,
+            "title": "Trang chủ",
+            "name": "home",
+            "slug": "/"
+        },
+        {
+            "id": 2,
+            "title": "Dịch vụ",
+            "name": "services",
+            "slug": "/services"
+        },
+        {
+            "id": 3,
+            "title": "Về chúng tôi",
+            "name": "about",
+            "slug": "/about"
+        }
+    ]
+}

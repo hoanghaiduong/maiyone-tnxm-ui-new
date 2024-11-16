@@ -13,10 +13,10 @@ function Footer() {
             href="#"
             aria-label="Brand"
           >
-            Brand
+            TNXM
           </a>
           <p className="mt-3 text-xs sm:text-sm text-gray-600 dark:text-neutral-400">
-            © 2024 Preline Labs.
+            © 2024 TNXM.
           </p>
         </div>
         {/* End Col */}
@@ -461,10 +461,10 @@ function Footer() {
                 href="#"
                 aria-label="Brand"
               >
-                Brand
+                TNXM
               </a>
               <p className="mt-1 text-xs sm:text-sm text-gray-600 dark:text-neutral-400">
-                © 2024 Preline Labs.
+                © 2024 TNXM.
               </p>
             </div>
             {/* Social Brands */}

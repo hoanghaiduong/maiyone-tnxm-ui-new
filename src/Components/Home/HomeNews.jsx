@@ -14,7 +14,7 @@ function HomeNews() {
     <div className=" grid grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
       {services.map((x) => {
         return (
-          <a className="group block" href="#">
+          <a key={x.id} className="group block" href="#">
             <div className="aspect-w-16 aspect-h-12 overflow-hidden bg-gray-100 rounded-2xl dark:bg-neutral-800">
               <img
                 className="group-hover:scale-105 transition-transform duration-500 ease-in-out object-cover rounded-2xl"

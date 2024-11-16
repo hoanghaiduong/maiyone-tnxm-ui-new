@@ -16,8 +16,8 @@ function HeaderSlide() {
                 
               {services.map((x) => {
                 return (
-                  <>
-                    <div className="hs-carousel-slide">
+                  
+                    <div key={x.id} className="hs-carousel-slide">
                       <div className="h-[30rem] md:h-[calc(100vh-106px)] md:h-[calc(100vh-106px)] flex flex-col bg-cover bg-center bg-no-repeat bg-[url('https://placehold.co/600x400/orange/white')]">
                         <div className="mt-auto w-2/3 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10">
                           <span className="block text-white">{x.company}</span>
@@ -36,7 +36,7 @@ function HeaderSlide() {
                       </div>
                     </div>
                 
-                  </>
+                  
                 );
               })}
               

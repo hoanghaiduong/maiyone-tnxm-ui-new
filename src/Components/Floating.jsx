@@ -56,7 +56,7 @@ function Floating() {
               className="group flex items-center gap-x-1.5 py-1.5 px-2 rounded-md text-[13px] text-gray-200 hover:bg-neutral-800 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:bg-neutral-800 text-neutral-200 hover:bg-neutral-700 focus:bg-neutral-700 "
               href="../../index.html"
             >
-              Preline UI
+              TNXM UI
               <svg
                 className="flex-shrink-0 size-3.5 ms-auto opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition"
                 xmlns="http://www.w3.org/2000/svg"

@@ -1,7 +1,7 @@
 export const services = [
     {
         id: 1,
-        title: "Dịch vụ chăm sóc bạn gái",
+        title: "Dịch vụ chăm sóc cây",
         company:"TNHH 1 THÀNH VIÊN",
         director:"Hoàng Hải Dương"
     },

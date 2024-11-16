@@ -5,12 +5,17 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./node_modules/apexcharts/dist/apexcharts.css">
   <title>Vite + React</title>
 
 </head>
 
 <body class="dark:bg-neutral-900">
   <div id="root"></div>
+  <script src="./node_modules/lodash/lodash.min.js"></script>
+  <script src="./node_modules/apexcharts/dist/apexcharts.min.js"></script>
+  <script src="./node_modules/preline/dist/helper-apexcharts.js"></script>
+
   <script>
     // This code should be added to <head>.
     // It's used to prevent page load glitches.
@@ -23,7 +28,9 @@
     else if (isDarkOrAuto && !html.classList.contains('dark')) html.classList.add('dark');
     else if (isLightOrAuto && !html.classList.contains('light')) html.classList.add('light');
   </script>
+ 
   <script type="module" src="/src/main.jsx"></script>
+  
 </body>
 
 </html>

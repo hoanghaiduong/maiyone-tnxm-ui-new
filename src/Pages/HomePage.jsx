@@ -12,13 +12,17 @@ import HomeNews from "../Components/Home/HomeNews";
 import HomeServices from "../Components/Home/HomeServices";
 import HomeVideoReview from "../Components/Home/HomeVideoReview";
 import VerticalTab from "../Components/Home/VerticalTab";
+import CkEditorComponent from "../Components/CKEditorComponent";
+
+
 function HomePage() {
   return (
     <>
+    
       <BannerTop />
-      {/* Slider */}
+    
       <HeaderSlide />
-      {/* End Slider */}
+    
 
       <div className="max-w-7xl px-4 lg:px-6 lg:px-8 py-8 lg:py-12 mx-auto">
         <div className="mb-6 sm:mb-10 max-w-2xl text-center mx-auto">
@@ -38,7 +42,7 @@ function HomePage() {
       <HomeNews />
       {/* Testimonials */}
       <VerticalTab />
-        {/*End Testimonials */}
+      {/*End Testimonials */}
       {/* Video Review */}
       <HomeVideoReview />
       {/* End Video Review */}

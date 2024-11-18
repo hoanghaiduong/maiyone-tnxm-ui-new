@@ -250,11 +250,12 @@ function Navbars() {
                               <span className="ms-2.5 mb-2 font-semibold text-xs uppercase text-gray-800 dark:text-neutral-200">
                                 Các dịch vụ nổi bật
                               </span>
-                                {services.map((x)=>{
+                                {services.map((x,id)=>{
                                   return(
                                     <Link
                                     className="p-3 flex gap-x-4 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 rounded-lg dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
                                     to="#"
+                                    key={id}
                                   >
                                     <svg
                                       className="shrink-0 size-4 mt-1 text-gray-800 dark:text-neutral-200"
@@ -334,9 +335,9 @@ function Navbars() {
                     </div>
                     {/* End Mega Menu */}
 
-                    <a
+                    <Link
                       className="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
-                      href="#"
+                      to="/blogs"
                     >
                       <svg
                         className="shrink-0 size-4 me-3 md:me-2 block md:hidden"
@@ -356,7 +357,7 @@ function Navbars() {
                         <path d="M10 6h8v4h-8V6Z" />
                       </svg>
                       Blog
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="my-2 md:my-0 md:mx-2">
@@ -462,9 +463,9 @@ function Navbars() {
                           </p>
                         </div>
                         <div className="p-1.5 space-y-0.5">
-                          <a
+                          <Link
                             className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300"
-                            href="#"
+                            to={"/profile"}
                           >
                             <svg
                               className="shrink-0 size-4"
@@ -483,8 +484,8 @@ function Navbars() {
                               <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
                               <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                             </svg>
-                            Profile
-                          </a>
+                            Trang cá nhân
+                          </Link>
                           <div className="py-1 flex items-center text-xs text-gray-400 uppercase before:flex-1 before:border-t before:border-gray-200 before:me-6 after:flex-1 after:border-t after:border-gray-200 after:ms-6 dark:text-neutral-500 dark:before:border-neutral-600 dark:after:border-neutral-600">
                             Chức năng
                           </div>

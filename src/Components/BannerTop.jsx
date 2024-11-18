@@ -38,10 +38,10 @@ function BannerTop() {
             </svg>
             <div className="grow">
               <p className="md:text-xl text-gray-800 font-semibold dark:text-neutral-200">
-                Get started today.
+                Chuyên cung ứng chuỗi dịch vụ
               </p>
               <p className="text-sm md:text-base text-gray-800 dark:text-neutral-200">
-                Sign up to get unlimited updates.
+                Nhận nhiều ưu đãi tại đây , ngay bây giờ
               </p>
             </div>
           </div>
@@ -51,13 +51,13 @@ function BannerTop() {
               className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
               href="#"
             >
-              Free trial
+            Tham gia
             </a>
             <a
               className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-gray-800 text-gray-800 hover:border-gray-500 hover:text-gray-500 focus:outline-none focus:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:border-white dark:text-white dark:hover:text-neutral-300 dark:hover:border-neutral-300 dark:focus:text-neutral-300 dark:focus:border-neutral-300"
               href="#"
             >
-              Buy now
+              Nhận thông tin tại đây
             </a>
           </div>
           {/* End Col */}

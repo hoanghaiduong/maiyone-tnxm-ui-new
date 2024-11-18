@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -74,12 +75,12 @@ function Footer() {
               </a>
             </p>
             <p>
-              <a
+              <Link
                 className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
-                href="#"
+                to="/blogs"
               >
                 Blog
-              </a>
+              </Link>
             </p>
             <p>
               <a

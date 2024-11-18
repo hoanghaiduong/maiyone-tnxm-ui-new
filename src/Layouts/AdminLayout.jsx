@@ -1,9 +1,38 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Outlet, useNavigate } from "react-router-dom";
 import Breadcrumb from "../Components/Admin/Breadcrumb";
 import Header from "../Components/Admin/Dashboard/Header";
+import { useSelector } from "react-redux";
+import { ToastAlert2 } from "../Components/Toast";
 
 function AdminLayout() {
+  const navigate = useNavigate();
+  const { isAuthenticated, user } = useSelector((state) => state.auth);
+  useEffect(() => {
+    if (isAuthenticated) {
+      if (user.user?.role?.name?.toLowerCase() === "admin") {
+        ToastAlert2.fire("Success", "Welcome to Admin Dashboard", "success");
+      } else {
+        ToastAlert2.fire("Forbidden", "Do not access resource", "error").then(
+          () => {
+            setTimeout(() => {
+              navigate("/");
+            }, 1500);
+          }
+        );
+      }
+    }
+    else {
+      ToastAlert2.fire("Error", "You need login", "error").then(
+        () => {
+          setTimeout(() => {
+            navigate("/");
+          }, 1500);
+        }
+      );
+    }
+    return () => {};
+  }, [isAuthenticated]);
   return (
     <div className="bg-gray-50 dark:bg-neutral-900">
       {/* ========== HEADER ========== */}
@@ -558,10 +587,8 @@ function AdminLayout() {
       {/* End Sidebar */}
       {/* Content */}
       <div className="w-full lg:ps-64">
-      
-          {/* your content goes here ... */}
-          <Outlet />
-      
+        {/* your content goes here ... */}
+        <Outlet />
       </div>
       {/* End Content */}
       {/* ========== END MAIN CONTENT ========== */}
